@@ -12,16 +12,25 @@
 ?>
 
 </div><!-- #content -->
-<div class=" widget-footer">
-	<div class="vc_row wpb_row vc_row-fluid">
+<footer class="mve-footer">
+<div class="inner flex">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer widgets') ) : ?>
 		<?php endif; // Custom widget Area End ?>
 	</div>
-</div>
+</footer>
 <footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="site-info">
-		<a href="//studioalloy.nl" rel="Studio Alloy">door Studio Alloy</a>
-	</div><!-- .site-info -->
+	<div class="sa-inner">
+	  <div class="sa-col">
+	    <?php echo get_bloginfo('name'); ?>
+	  </div>
+	  <a href="//studioalloy.nl" target="_blank" class="sa-credits">
+	      <div class="sa-linkback">
+	         <p>Studio Alloy</p>
+	        <span>design & code</span>
+	    </div>
+	    <img src="//studioalloy.nl/img/alloy-logo-bw.svg">
+	  </a>
+	  </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

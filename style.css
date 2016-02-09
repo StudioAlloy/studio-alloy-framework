@@ -5,7 +5,7 @@ Github Theme URI: https://github.com/StudioAlloy/studio-alloy-framework
 Author: Studio Alloy
 Author URI: http://mvaneijgen.nl
 Description: A lightweight Wordpress theme based on flexbox
-Version: 0.0.1
+Version: 0.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: alloy
@@ -900,23 +900,77 @@ object {
 .wpb_row, .wpb_content_element, ul.wpb_thumbnails-fluid > li, .wpb_button {
      margin-bottom: 0 !important;
 }
-.vc_col-xs-1, .vc_col-sm-1, .vc_col-md-1, .vc_col-lg-1, .vc_col-xs-2, .vc_col-sm-2, .vc_col-md-2, .vc_col-lg-2, .vc_col-xs-3, .vc_col-sm-3, .vc_col-md-3, .vc_col-lg-3, .vc_col-xs-4, .vc_col-sm-4, .vc_col-md-4, .vc_col-lg-4, .vc_col-xs-5, .vc_col-sm-5, .vc_col-md-5, .vc_col-lg-5, .vc_col-xs-6, .vc_col-sm-6, .vc_col-md-6, .vc_col-lg-6, .vc_col-xs-7, .vc_col-sm-7, .vc_col-md-7, .vc_col-lg-7, .vc_col-xs-8, .vc_col-sm-8, .vc_col-md-8, .vc_col-lg-8, .vc_col-xs-9, .vc_col-sm-9, .vc_col-md-9, .vc_col-lg-9, .vc_col-xs-10, .vc_col-sm-10, .vc_col-md-10, .vc_col-lg-10, .vc_col-xs-11, .vc_col-sm-11, .vc_col-md-11, .vc_col-lg-11, .vc_col-xs-12, .vc_col-sm-12, .vc_col-md-12, .vc_col-lg-12 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer#colophon {
+  background: #0ba;
+  color: #fff;
 }
+footer#colophon .sa-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+footer#colophon a {
+  text-decoration: none;
+}
+.sa-col {
+  display: inline-block;
+}
+.sa-credits,
+.sa-col {
+    padding: 15px 45px 20px;
+		text-align: left;
+}
+.sa-credits {
+  background: rgba(0,0,0,.2);
+  display: inline-block;
+}
+.sa-credits p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sa-credits:hover {
+  background: rgba(0,0,0,.4);
+}
+.sa-credits > * {
+  display: inline-block;
+}
+.sa-credits img {
+  width: 40px;
+}
+.sa-linkback {
+  display: inline-block;
+  margin-right: 5px;
+  text-align: right;
+}
+.sa-linkback > * {
+  display: block;
+}
+.sa-linkback a {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sa-linkback p {
+  margin-bottom: 0;
+}
+.sa-linkback span {
+  font-size: 9px;
+  margin-right: 5px;
+}
+/*--------------------------------------------------------------
+# END Footer
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-@media only screen and (max-width : 768px) {
+@media only screen and (min-width : 480px) {
 	/* Styles */
-	.vc_pageable-slide-wrapper {
-	margin-right: 0 !important
-}
-	.vc_grid-item {
-			padding-right: 0 !important;
+	.sa-col {
+  	width: 79%;
 	}
-	.vc_row {
-	     margin-left: 0 !important;
-	     margin-right: 0 !important;
+	.sa-credits {
+  	width: 20%;
 	}
 }
