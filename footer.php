@@ -28,7 +28,7 @@
 	         <p>Studio Alloy</p>
 	        <span>design & code</span>
 	    </div>
-	    <img src="//studioalloy.nl/img/alloy-logo-bw.svg">
+	    <img src="wp-content/themes/studio-alloy-framework/inc/alloy-logo-bw.svg">
 	  </a>
 	  </div>
 </footer><!-- #colophon -->

@@ -181,12 +181,6 @@ if ( ! function_exists( 'alloy_setup' ) ) :
 					'before_title' => '<h5>',
 					'after_title' => '</h5>',
 					) );
-
-
-
-					/*Disable front end edit text*/
-					add_filter( 'edit_post_link', '__return_false' );
-					vc_disable_frontend();
 					/*END Disable front end edit text*/
 
 					/*Make CPT UI and VC play nice*/
@@ -209,3 +203,9 @@ if ( ! function_exists( 'alloy_setup' ) ) :
 					}
 					add_action( 'wp_enqueue_scripts', 'PREFIX_remove_scripts', 20 );
 					//END dequeue css from plugins
+
+					/**
+					 * Load WooCommerce compatibility file.
+					 */
+					require get_template_directory() . '/inc/woocommerce.php';
+					remove_action( 'admin_notices', 'woothemes_updater_notice' );
