@@ -1,0 +1,118 @@
+/*
+Theme Name: alloy child
+Template: studio-alloy-framework
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 3rem
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.8rem
+}
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.6rem
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.4rem
+}
+#site-navigation,
+h5 {
+  font-size: 1rem;
+  line-height: 1rem
+}
+a:visited,
+a {
+  color: #e70;
+  text-decoration: none;
+}
+/* Layout
+———————————————————————————————————— */
+.mve-footer .inner,
+.entry-header,
+#site-navigation,
+.vc_row-fluid,
+[data-vc-full-width="true"] .wpb_wrapper,
+.menu-hoofdmenu-container {
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+[data-vc-full-width="true"],
+[data-vc-stretch-content="true"] .wpb_wrapper{
+  max-width: 100%;
+}
+/* END Layout
+———————————————————————————————————— */
+/* Flexbox
+———————————————————————————————————— */
+.flex {
+  display: flex;
+}
+/* END Flexbox
+———————————————————————————————————— */
+/* Header
+———————————————————————————————————— */
+/* END Header
+———————————————————————————————————— */
+/* nav
+———————————————————————————————————— */
+/* END nav
+———————————————————————————————————— */
+/* Rev slider
+———————————————————————————————————— */
+/* END Rev slider
+———————————————————————————————————— */
+/* END Posts
+———————————————————————————————————— */
+/* Contact from 7
+———————————————————————————————————— */
+/* END Contact from 7
+———————————————————————————————————— */
+/* Backgrounds
+———————————————————————————————————— */
+.alt-bg {
+    background: #e70;
+    color: #fff;
+    padding: 30px 0;
+}
+/* END Backgrounds
+———————————————————————————————————— */
+/* Bits
+———————————————————————————————————— */
+/* END Bits
+———————————————————————————————————— */
+/* Footer
+———————————————————————————————————— */
+footer#colophon {
+  background: #222;
+  text-align: center;
+}
+footer {
+    background: #eee;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer h5 {
+  margin-bottom: 15px;
+}
+/* END Footer
+———————————————————————————————————— */
+/* Media Queries
+———————————————————————————————————— */
+@media only screen and (min-width : 800px) {
+  /* Styles */
+}
+/* END Media Queries
+———————————————————————————————————— */
